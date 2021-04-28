@@ -1,1 +1,6 @@
-test
+# notebook on how we created teh eqtl plots
+
+Also worth noting that you can export these images as htmls which makes it easy to explore variants in LD 
+plotly.offline.plot(fig, filename = "CYP1A1_zlc_zdrink.html", auto_open=False)
+
+
