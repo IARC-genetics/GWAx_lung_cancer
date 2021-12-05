@@ -1,42 +1,1115 @@
-## Additional data from Gabriel and Atkins
-
-We have uploaded an excel spreadsheet with our PRS and summary of results. 
-
-Along with plotly plots 
+<!DOCTYPE html>
+<html lang="en">
 
 
 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+<head>
+    
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>
+        IARCRP: Home
+    </title>
 
-- Bulleted
-- List
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"/>
+    <!--We fixed version 2.13.0 of bootstrap-vue because on version 2.14.0(latest) <b-collapse> doesn't work.-->
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.13.0/bootstrap-vue.min.css"/>
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/perfect-scrollbar-vue2@1.2.0/dist/vue2-perfect-scrollbar.min.css">
+    <link type="text/css" rel="stylesheet" href="/style/global.css"/>
 
-1. Numbered
-2. List
+    <!--Style section for user site name size, font-weight values and calendar colors-->
+    <style>
+        
+            .iarc-meetings {
+                background-color: #DADADA !important;
+            }
+        
+            .iarc-seminar-series {
+                background-color: #B3E0FB !important;
+            }
+        
+            .iarcnci-tumour-seminars {
+                background-color: #aee0b3 !important;
+            }
+        
 
-**Bold** and _Italic_ and `Code` text
+        .header-name-text h1 {
+            font-size: 27px;
+            
+        }
+        .headerMob-top-name-text {
+            font-size: 31px;
+            
+        }
+        @media(max-width: 575px) {
+            .headerMob-top-name-text {
+                font-size: 31px;
+            }
+        }
+    </style>
 
-[Link](url) and ![Image](src)
-```
+    <script src="//cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+    <!--We fixed version 2.13.0 of bootstrap-vue because on version 2.14.0(latest) <b-collapse> doesn't work.-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.13.0/bootstrap-vue.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.13.0/bootstrap-vue-icons.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue-async-computed@3.8.2/dist/vue-async-computed.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/v-calendar@1.0.8/lib/v-calendar.umd.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <script src="//cdn.jsdelivr.net/npm/perfect-scrollbar-vue2@1.2.0/dist/vue2-perfect-scrollbar.umd.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="/js/mixins.js?h=5fb375a6"></script>
+    <script src="/js/stylus.min.js?h=b4bf329f"></script>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+</head>
 
-### Jekyll Themes
+<body>
+    <div id="app">
+        <header-my
+            :header-logo="headerLogo"
+            :iarc-link="iarcLink"
+            :links="headerLinks"
+            :white-logo="whiteLogo"
+            :texts="headerTexts"
+            :project-data="projectData"
+            :lang-panel="langPanel"
+            :enable-search="false"
+            :remote-search="false"
+            
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IARC-genetics/GWAx_lung_cancer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+:with-banner="true"
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        >
+        </header-my>
+        <header-mob
+            :header-logo="headerLogo"
+            :iarc-link="iarcLink"
+            :project-data="projectData"
+            :texts="headerMobTexts"
+            :social="social"
+            :links="headerMobLinks"
+            :lang-panel="langPanel"
+            :actual-year="actualYear"
+            :lang-panel="langPanel"
+            :enable-search="false"
+            :remote-search="false"
+        >
+        </header-mob>
+        <div id="body-block">
+            
+
+
+<div class="page-container ">
+    <div class="container">
+        
+        <b-row class="d-flex">
+            <b-col class="title-container" cols="12" lg="10">
+                <h1 class="page-title ">
+                    
+                </h1>
+            </b-col>
+            
+        </b-row>
+    </div>
+    <b-row class="content-body ">
+    
+        
+        <b-col class="page-part" cols="12">
+        
+            
+                
+<div class="container">
+
+    
+    
+    
+    <b-row elements-size="default">
+    
+        
+    </b-row>
+</div>
+            
+                <div class="container">
+    
+    
+    <div class="text-container">
+        <div><p>The International Lung Cancer Consortium (ILCCO) is an international group of lung cancer researchers, established in 2004 with the aim of sharing comparable data from ongoing lung cancer case-control and cohort studies. Questionnaire data from a approximately 100,000 case-control pairs, over 1 million cohort participants, and the biological samples from the majority of the subjects would be available. These studies are from different geographical areas and ethnicities. The overall objectives are to achieve greater power, especially for subgroup analyses, reduce duplication of research effort, replicate novel findings, and afford substantial cost savings through large collaborative efforts.</p>
+<p>&nbsp;</p>
+<h2>ILCCO News</h2>
+<p>&nbsp;</p></div>
+    </div>
+</div>
+            
+                
+<div class="container">
+
+    
+    
+    
+    <b-row elements-size="default">
+    
+        
+            
+
+
+
+<rect-text-card
+    :card="{
+        link: ``,
+        linkTarget: '',
+        title: `ILCCO-INTEGRAL Annual Meeting`,
+        text: `&lt;p&gt;Date: November 8-9, 2021&lt;br /&gt;Place: Virtual&lt;br /&gt;Host: ILCCO Coordination Group and Steering Committee&lt;/p&gt;`,
+    }"
+    :card-size="{
+        'lg': 4,
+        'md': 6,
+    }"
+    
+>
+</rect-text-card>
+
+        
+            
+
+
+
+<rect-text-card
+    :card="{
+        link: ``,
+        linkTarget: '',
+        title: `ILCCO-INTEGRAL Joint Steering Committee Telephone Conference call`,
+        text: `&lt;p&gt;Date: July 19, 2021&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;`,
+    }"
+    :card-size="{
+        'lg': 4,
+        'md': 6,
+    }"
+    
+>
+</rect-text-card>
+
+        
+            
+
+
+
+<rect-text-card
+    :card="{
+        link: ``,
+        linkTarget: '',
+        title: `ILCCO-INTEGRAL Joint Steering Committee Telephone Conference call`,
+        text: `&lt;p&gt;Date: May 10, 2021&lt;/p&gt;`,
+    }"
+    :card-size="{
+        'lg': 4,
+        'md': 6,
+    }"
+    
+>
+</rect-text-card>
+
+        
+            
+
+
+
+<docks-card
+    :docks="[
+        
+        {
+            
+            icon: `/components-factory/docs-cards/home1/link.svg`,
+            
+            name: `See Past Events`,
+            data: ``,
+            link: `/about/past-events/`,
+            linkTarget: '_self',
+            
+        },
+        
+    ]"
+    :card-size="{
+        'lg': 12,
+    }"
+    
+>
+</docks-card>
+
+        
+    </b-row>
+</div>
+            
+                <div class="container">
+    
+    
+    <div class="text-container">
+        <div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+    </div>
+</div>
+            
+        </b-col>
+    </b-row>
+</div>
+
+        </div>
+        <footer-my
+            :menu="footerMenu"
+            :contact="footerContact"
+            :texts="footerTexts"
+            :social="social"
+            :actual-year="actualYear"
+        >
+        </footer-my>
+        <cookie-popup
+            :content='"\u003cp\u003eThis website uses cookies to enhance your user experience. By using the website, you consent to our use of cookies. For more information, please review our Privacy policy.\u003c/p\u003e\n"'
+            :button-text='"Continue"'
+        >
+        </cookie-popup>
+    </div>
+
+
+    <script type="text/javascript">
+    
+
+
+
+
+
+httpVueLoader.langProcessor.stylus = function (stylusText) {
+    return new Promise(function (resolve, reject) {
+        stylus.render(stylusText.trim(), {}, function (err, css) {
+            if (err) reject(err);
+            resolve(css);
+        });
+    })
+};
+
+Vue.config.ignoredElements = ['gcse:searchresults-only'];
+
+new Vue({
+    el: '#app',
+    components: {
+        'header-my': httpVueLoader('/components/Header.vue'),
+        'header-mob': httpVueLoader('/components/HeaderMob.vue'),
+        'footer-my': httpVueLoader('/components/Footer.vue'),
+        'sidebar-my': httpVueLoader('/components/Sidebar.vue'),
+        'accordion-my': httpVueLoader('/components/Accordion.vue'),
+        'carousel-my': httpVueLoader('/components/Carousel.vue'),
+        'remote-carousel': httpVueLoader('/components/RemoteCarousel.vue'),
+        'remote-rectangle-news-card': httpVueLoader('/components/RemoteRectangleNewsCard.vue'),
+        'remote-news-card': httpVueLoader('/components/RemoteNewsCard.vue'),
+        'component-title': httpVueLoader('/components/ComponentTitle.vue'),
+        'news-card-my': httpVueLoader('/components/NewsCard.vue'),
+        'logo-card-my': httpVueLoader('/components/LogoCard.vue'),
+        'publication-card-my': httpVueLoader('/components/PublicationCard.vue'),
+        'event-card-my': httpVueLoader('/components/EventCard.vue'),
+        'rect-photo-card': httpVueLoader('/components/RectPhotoCard.vue'),
+        'rect-btn-card': httpVueLoader('/components/RectBtnCard.vue'),
+        'rect-text-card': httpVueLoader('/components/RectTextCard.vue'),
+        'docks-card': httpVueLoader('/components/DocksCard.vue'),
+        'map-component': httpVueLoader('/components/MapComponent.vue'),
+        'cookie-popup': httpVueLoader('/components/CookiePopup.vue'),
+        'photo-gallery': httpVueLoader('/components/PhotoGallery.vue'),
+        'breadcrumbs-my': httpVueLoader('/components/Breadcrumbs.vue'),
+        'search-result': httpVueLoader('/components/SearchResult.vue'),
+        'banner': httpVueLoader('/components/Banner.vue'),
+        'social-icons-block': httpVueLoader('/components/SocialIconsBlock.vue'),
+        'video-card': httpVueLoader('/components/VideoCard.vue'),
+        'calendar-block': httpVueLoader('/components/CalendarBlock.vue'),
+        'remote-34-card': httpVueLoader('/components/Remote34Card.vue'),
+        'automatic-carousel': httpVueLoader('/components/RemoteAutomaticCarousel.vue'),
+        'just-published': httpVueLoader('/components/JustPublishedRemoteCard.vue'),
+        'files-section': httpVueLoader('/components/FilesSection.vue')
+    },
+    asyncComputed: {
+        actualYear: () => (
+            fetch('//worldtimeapi.org/api/ip')
+            .then(result => result.json())
+            .then(data => data.datetime.split('-')[0])
+        ),
+    },
+    methods: {
+        scrollOnLoad: function() {
+            if (window.location.hash && !this.wasScrolled) {
+                let hash = window.location.hash.replace('#', '');
+                let anchorElement = document.getElementById(hash);
+                if (anchorElement) {
+                    let isLoaded = (
+                        Array.from(
+                            anchorElement
+                            .parentElement
+                            .querySelectorAll('div.row')
+                        )
+                        .map(x => x.children.length)
+                        .every(x => x !== 0)
+                    );
+                    if (isLoaded) {
+                        anchorElement.scrollIntoView();
+                        this.wasScrolled = true;
+                    }
+                }
+                else {
+                    this.wasScrolled = true;
+                };
+            };
+        },
+        stickFooter: function() {
+            let header = document.querySelector('.header');
+            if (header === null) {
+                header = document.querySelector('.headerMob');
+            }
+            let footer = document.getElementById('footer');
+            let body = document.getElementById('body-block');
+            if(header && footer && body) {
+                let cssrule = `calc(100vh - ${header.clientHeight}px - ${footer.clientHeight}px)`;
+                body.style.minHeight = cssrule;
+            }
+        },
+        getGradientClass: function (gradient) {
+            switch (gradient) {
+                case 'grey-bottom':
+                    return 'grey-btm-gradient'
+                case 'blue-intense-bottom':
+                    return 'blue-btm-intense-gradient'
+                case 'blue-light-bottom':
+                    return 'blue-btm-gradient'
+                case 'blue-double':
+                    return 'blue-double-gradient'
+            }
+        },
+        wrapTables: function() {
+            let tables = document.getElementsByTagName('table');
+            for (let element of tables) {
+                let wrappedElement = `<div class="table-wrapper container"><table class="table-bordered">${element.innerHTML}</table></div>`;
+                element.outerHTML = wrappedElement;
+            }
+        },
+    },
+    created: function() {
+        window.addEventListener('resize', this.stickFooter);
+        this.wrapTables();
+    },
+    updated: function() {
+        this.stickFooter();
+        this.scrollOnLoad();
+    },
+    data: function() {
+        return {
+            baseUrl: "https://iarc.spherical.horse",
+            wasScrolled: false,
+            
+            
+                langPanel: null,
+            
+            whiteLogo: "/config" + '/' + "logo-white.svg",
+            headerLinks: [
+                {
+                    name: 'Home',
+                    path: "/",
+                    isActive: true,
+                },
+                
+                
+                
+                {
+                    name: "About ILCCO",
+                    
+                    path: "/about/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: {
+                        links: [
+                            
+                                {
+                                    name: "Introduction",
+                                    path: "/about/introduction/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Map",
+                                    path: "/about/map/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Study description",
+                                    path: "/about/study-description/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Group photo gallery",
+                                    path: "/about/group-photo-gallery/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Past Events",
+                                    path: "/about/past-events/",
+                                    isActive: false,
+                                },
+                            
+                        ],
+                        text: "\u003cp\u003eThe International Lung Cancer Consortium (ILCCO) is an international group of lung cancer researchers, established in 2004 with the aim of sharing comparable data from ongoing lung cancer case-control and cohort studies.\u003c/p\u003e",
+                        
+                        img: {
+                            link: "/menus/main-menu/megamenubanner.jpg",
+                            path: "/",
+                        },
+                        
+                        
+                        social: {
+                            title: "Connect with us",
+                            
+                            twitter: {
+                                link: "https://twitter.com/iarcwho",
+                                icon: "/img/twitter.svg?h=79dd53aa"
+                            },
+                            
+                            linkedin: {
+                                link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                                icon: "/img/linkedin.svg?h=5172faa3"
+                            },
+                            
+                            youtube: {
+                                link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                                icon: "/img/youtube.svg?h=415ed3d9"
+                            },
+                            
+                            rss: {
+                                link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                                icon: "/img/rss.svg?h=92a3129f"
+                            },
+                            
+                        }
+                        
+                    }
+                    
+                },
+                
+                
+                
+                {
+                    name: "Working groups",
+                    
+                    path: "/working-groups/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: {
+                        links: [
+                            
+                                {
+                                    name: "Details",
+                                    path: "/working-groups/details/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Members Contact",
+                                    path: "/working-groups/members-contact/",
+                                    isActive: false,
+                                },
+                            
+                        ],
+                        text: "\u003cp\u003eILCCO is organized in project groups that promote collaborative projects in specific areas of lung cancer research.\u003c/p\u003e",
+                        
+                        img: {
+                            link: "/menus/main-menu/megamenubanner.jpg",
+                            path: "/",
+                        },
+                        
+                        
+                        social: {
+                            title: "Connect with us",
+                            
+                            twitter: {
+                                link: "https://twitter.com/iarcwho",
+                                icon: "/img/twitter.svg?h=79dd53aa"
+                            },
+                            
+                            linkedin: {
+                                link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                                icon: "/img/linkedin.svg?h=5172faa3"
+                            },
+                            
+                            youtube: {
+                                link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                                icon: "/img/youtube.svg?h=415ed3d9"
+                            },
+                            
+                            rss: {
+                                link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                                icon: "/img/rss.svg?h=92a3129f"
+                            },
+                            
+                        }
+                        
+                    }
+                    
+                },
+                
+                
+                
+                {
+                    name: "Research projects",
+                    
+                    path: "/research-projects/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: {
+                        links: [
+                            
+                                {
+                                    name: "Pooled analysis on Medical conditions",
+                                    path: "/research-projects/pooled-analysis-on-medical-conditions/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Replication of Susceptibility Loci",
+                                    path: "/research-projects/replication-of-susceptibility-loci/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Pooled analysis on DNA Repair pathway",
+                                    path: "/research-projects/pooled-analysis-on-dna-repair-pathway/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "Family History Working group",
+                                    path: "/research-projects/family-history-working-group/",
+                                    isActive: false,
+                                },
+                            
+                        ],
+                        text: "\u003cp\u003e\u003c!-- [if gte mso 9]\u003e\u003cxml\u003e\n \u003cw:WordDocument\u003e\n  \u003cw:View\u003eNormal\u003c/w:View\u003e\n  \u003cw:Zoom\u003e0\u003c/w:Zoom\u003e\n  \u003cw:TrackMoves/\u003e\n  \u003cw:TrackFormatting/\u003e\n  \u003cw:PunctuationKerning/\u003e\n  \u003cw:ValidateAgainstSchemas/\u003e\n  \u003cw:SaveIfXMLInvalid\u003efalse\u003c/w:SaveIfXMLInvalid\u003e\n  \u003cw:IgnoreMixedContent\u003efalse\u003c/w:IgnoreMixedContent\u003e\n  \u003cw:AlwaysShowPlaceholderText\u003efalse\u003c/w:AlwaysShowPlaceholderText\u003e\n  \u003cw:DoNotPromoteQF/\u003e\n  \u003cw:LidThemeOther\u003eEN-GB\u003c/w:LidThemeOther\u003e\n  \u003cw:LidThemeAsian\u003eX-NONE\u003c/w:LidThemeAsian\u003e\n  \u003cw:LidThemeComplexScript\u003eX-NONE\u003c/w:LidThemeComplexScript\u003e\n  \u003cw:Compatibility\u003e\n   \u003cw:BreakWrappedTables/\u003e\n   \u003cw:SnapToGridInCell/\u003e\n   \u003cw:WrapTextWithPunct/\u003e\n   \u003cw:UseAsianBreakRules/\u003e\n   \u003cw:DontGrowAutofit/\u003e\n   \u003cw:SplitPgBreakAndParaMark/\u003e\n   \u003cw:EnableOpenTypeKerning/\u003e\n   \u003cw:DontFlipMirrorIndents/\u003e\n   \u003cw:OverrideTableStyleHps/\u003e\n  \u003c/w:Compatibility\u003e\n  \u003cw:BrowserLevel\u003eMicrosoftInternetExplorer4\u003c/w:BrowserLevel\u003e\n  \u003cm:mathPr\u003e\n   \u003cm:mathFont m:val=\"Cambria Math\"/\u003e\n   \u003cm:brkBin m:val=\"before\"/\u003e\n   \u003cm:brkBinSub m:val=\"\u0026#45;-\"/\u003e\n   \u003cm:smallFrac m:val=\"off\"/\u003e\n   \u003cm:dispDef/\u003e\n   \u003cm:lMargin m:val=\"0\"/\u003e\n   \u003cm:rMargin m:val=\"0\"/\u003e\n   \u003cm:defJc m:val=\"centerGroup\"/\u003e\n   \u003cm:wrapIndent m:val=\"1440\"/\u003e\n   \u003cm:intLim m:val=\"subSup\"/\u003e\n   \u003cm:naryLim m:val=\"undOvr\"/\u003e\n  \u003c/m:mathPr\u003e\u003c/w:WordDocument\u003e\n\u003c/xml\u003e\u003c![endif]--\u003e\u003c!-- [if gte mso 9]\u003e\u003cxml\u003e\n \u003cw:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"false\"\n  DefSemiHidden=\"false\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"376\"\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"0\" QFormat=\"true\" Name=\"Normal\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 7\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 8\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 9\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 7\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 8\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 9\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 7\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 8\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 9\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal Indent\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footnote text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"header\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footer\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index heading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"35\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"caption\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"table of figures\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"envelope address\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"envelope return\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footnote reference\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation reference\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"line number\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"page number\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"endnote reference\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"endnote text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"table of authorities\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"macro\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"toa heading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"10\" QFormat=\"true\" Name=\"Title\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Closing\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Signature\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"Default Paragraph Font\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Message Header\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"11\" QFormat=\"true\" Name=\"Subtitle\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Salutation\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Date\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text First Indent\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text First Indent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Note Heading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Block Text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Hyperlink\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"FollowedHyperlink\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"22\" QFormat=\"true\" Name=\"Strong\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"20\" QFormat=\"true\" Name=\"Emphasis\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Document Map\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Plain Text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"E-mail Signature\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Top of Form\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Bottom of Form\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal (Web)\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Acronym\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Address\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Cite\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Code\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Definition\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Keyboard\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Preformatted\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Sample\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Typewriter\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Variable\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal Table\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation subject\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"No List\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 7\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 8\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 7\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 8\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Contemporary\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Elegant\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Professional\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Subtle 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Subtle 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Balloon Text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" Name=\"Table Grid\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Theme\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" Name=\"Placeholder Text\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"1\" QFormat=\"true\" Name=\"No Spacing\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" Name=\"Revision\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"34\" QFormat=\"true\"\n   Name=\"List Paragraph\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"29\" QFormat=\"true\" Name=\"Quote\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"30\" QFormat=\"true\"\n   Name=\"Intense Quote\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"19\" QFormat=\"true\"\n   Name=\"Subtle Emphasis\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"21\" QFormat=\"true\"\n   Name=\"Intense Emphasis\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"31\" QFormat=\"true\"\n   Name=\"Subtle Reference\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"32\" QFormat=\"true\"\n   Name=\"Intense Reference\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"33\" QFormat=\"true\" Name=\"Book Title\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"37\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"Bibliography\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"TOC Heading\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"41\" Name=\"Plain Table 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"42\" Name=\"Plain Table 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"43\" Name=\"Plain Table 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"44\" Name=\"Plain Table 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"45\" Name=\"Plain Table 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"40\" Name=\"Grid Table Light\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\" Name=\"Grid Table 1 Light\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\" Name=\"Grid Table 6 Colorful\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\" Name=\"Grid Table 7 Colorful\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\" Name=\"List Table 1 Light\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\" Name=\"List Table 6 Colorful\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\" Name=\"List Table 7 Colorful\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 1\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 2\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 3\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 4\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 5\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 6\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Mention\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Smart Hyperlink\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Hashtag\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Unresolved Mention\"/\u003e\n  \u003cw:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Smart Link\"/\u003e\n \u003c/w:LatentStyles\u003e\n\u003c/xml\u003e\u003c![endif]--\u003e\u003c!-- [if gte mso 10]\u003e\n\u003cstyle\u003e\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Table Normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin:0cm;\n\tmso-para-margin-bottom:.0001pt;\n\tmso-pagination:widow-orphan;\n\tfont-size:10.0pt;\n\tfont-family:\"Times New Roman\",serif;}\n\u003c/style\u003e\n\u003c![endif]--\u003e\u003c/p\u003e\n\u003cp\u003eSelective list of current ILCCO research projects.\u003c/p\u003e",
+                        
+                        img: {
+                            link: "/menus/main-menu/megamenubanner.jpg",
+                            path: "/",
+                        },
+                        
+                        
+                        social: {
+                            title: "Connect with us",
+                            
+                            twitter: {
+                                link: "https://twitter.com/iarcwho",
+                                icon: "/img/twitter.svg?h=79dd53aa"
+                            },
+                            
+                            linkedin: {
+                                link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                                icon: "/img/linkedin.svg?h=5172faa3"
+                            },
+                            
+                            youtube: {
+                                link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                                icon: "/img/youtube.svg?h=415ed3d9"
+                            },
+                            
+                            rss: {
+                                link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                                icon: "/img/rss.svg?h=92a3129f"
+                            },
+                            
+                        }
+                        
+                    }
+                    
+                },
+                
+                
+                
+                {
+                    name: "Publications",
+                    
+                    path: "/publications/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                },
+                
+                
+                
+                {
+                    name: "Links",
+                    
+                    path: "/links/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: {
+                        links: [
+                            
+                                {
+                                    name: "Carreer Opportunity",
+                                    path: "/links/carreer-opportunity/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "ILCCO Journal - Lung Cancer",
+                                    path: "/links/ilcco-journal-lung-cancer/",
+                                    isActive: false,
+                                },
+                            
+                        ],
+                        text: "\u003cp\u003eCarreer opportunity and ILCCO Journal\u003c/p\u003e",
+                        
+                        img: {
+                            link: "/menus/main-menu/megamenubanner.jpg",
+                            path: "/",
+                        },
+                        
+                        
+                        social: {
+                            title: "Connect with us",
+                            
+                            twitter: {
+                                link: "https://twitter.com/iarcwho",
+                                icon: "/img/twitter.svg?h=79dd53aa"
+                            },
+                            
+                            linkedin: {
+                                link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                                icon: "/img/linkedin.svg?h=5172faa3"
+                            },
+                            
+                            youtube: {
+                                link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                                icon: "/img/youtube.svg?h=415ed3d9"
+                            },
+                            
+                            rss: {
+                                link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                                icon: "/img/rss.svg?h=92a3129f"
+                            },
+                            
+                        }
+                        
+                    }
+                    
+                },
+                
+                
+                
+                {
+                    name: "Contact",
+                    
+                    path: "/contact/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: {
+                        links: [
+                            
+                                {
+                                    name: "How to join ILCCO",
+                                    path: "/contact/how-to-join-the-international-lung-cancer-consortium/",
+                                    isActive: false,
+                                },
+                            
+                                {
+                                    name: "How to propose a new project",
+                                    path: "/contact/how-to-propose-a-new-project/",
+                                    isActive: false,
+                                },
+                            
+                        ],
+                        text: "\u003cp\u003eHow to join ILCCO.\u003c/p\u003e",
+                        
+                        img: {
+                            link: "/menus/main-menu/megamenubanner.jpg",
+                            path: "/",
+                        },
+                        
+                        
+                        social: {
+                            title: "Connect with us",
+                            
+                            twitter: {
+                                link: "https://twitter.com/iarcwho",
+                                icon: "/img/twitter.svg?h=79dd53aa"
+                            },
+                            
+                            linkedin: {
+                                link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                                icon: "/img/linkedin.svg?h=5172faa3"
+                            },
+                            
+                            youtube: {
+                                link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                                icon: "/img/youtube.svg?h=415ed3d9"
+                            },
+                            
+                            rss: {
+                                link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                                icon: "/img/rss.svg?h=92a3129f"
+                            },
+                            
+                        }
+                        
+                    }
+                    
+                },
+                
+            ],
+            headerLogo: "/config" + '/' + "logo.svg",
+            iarcLink: "https://iarc.fr",
+            headerTexts: {
+                donateIsVisible: true,
+                donateText: "Donate now",
+                donateTextShort: "Donate",
+                donateLink: "https://iarc.fr/donations",
+                searchTitle: "Search",
+                searchPlaceholder: "Search on ...",
+            },
+            projectData: {
+                siteName: "International Lung Cancer Consortium",
+                siteNameLink: "/",
+                
+                
+                    logoLink: "https://iarc.fr",
+                
+            },
+            headerMobLinks: [
+                {
+                    name: "Main",
+                    path: "/",
+                    isActive: true,
+                },
+                
+                
+                
+                {
+                    name: "About ILCCO",
+                    
+                    path: "/about/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: [
+                        
+                            {
+                                name: "Introduction",
+                                path: "/about/introduction/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Map",
+                                path: "/about/map/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Study description",
+                                path: "/about/study-description/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Group photo gallery",
+                                path: "/about/group-photo-gallery/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Past Events",
+                                path: "/about/past-events/",
+                                isActive: false,
+                            },
+                        
+                    ]
+                    
+                },
+                
+                
+                
+                {
+                    name: "Working groups",
+                    
+                    path: "/working-groups/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: [
+                        
+                            {
+                                name: "Details",
+                                path: "/working-groups/details/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Members Contact",
+                                path: "/working-groups/members-contact/",
+                                isActive: false,
+                            },
+                        
+                    ]
+                    
+                },
+                
+                
+                
+                {
+                    name: "Research projects",
+                    
+                    path: "/research-projects/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: [
+                        
+                            {
+                                name: "Pooled analysis on Medical conditions",
+                                path: "/research-projects/pooled-analysis-on-medical-conditions/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Replication of Susceptibility Loci",
+                                path: "/research-projects/replication-of-susceptibility-loci/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Pooled analysis on DNA Repair pathway",
+                                path: "/research-projects/pooled-analysis-on-dna-repair-pathway/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "Family History Working group",
+                                path: "/research-projects/family-history-working-group/",
+                                isActive: false,
+                            },
+                        
+                    ]
+                    
+                },
+                
+                
+                
+                {
+                    name: "Publications",
+                    
+                    path: "/publications/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                },
+                
+                
+                
+                {
+                    name: "Links",
+                    
+                    path: "/links/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: [
+                        
+                            {
+                                name: "Carreer Opportunity",
+                                path: "/links/carreer-opportunity/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "ILCCO Journal - Lung Cancer",
+                                path: "/links/ilcco-journal-lung-cancer/",
+                                isActive: false,
+                            },
+                        
+                    ]
+                    
+                },
+                
+                
+                
+                {
+                    name: "Contact",
+                    
+                    path: "/contact/",
+                    
+                    target: "_self",
+                    isActive: false,
+                    
+                    child: [
+                        
+                            {
+                                name: "How to join ILCCO",
+                                path: "/contact/how-to-join-the-international-lung-cancer-consortium/",
+                                isActive: false,
+                            },
+                        
+                            {
+                                name: "How to propose a new project",
+                                path: "/contact/how-to-propose-a-new-project/",
+                                isActive: false,
+                            },
+                        
+                    ]
+                    
+                },
+                
+            ],
+            headerMobTexts: {
+                menu: "Menu",
+                close: "Close",
+                searchPlaceholder: "Search on ...",
+                donateIsVisible: true,
+                donateText: "Donate now",
+                donateLink: "https://iarc.fr/donations",
+                policyText: "Privacy policy",
+                policyLink: "https://www.iarc.who.int/privacy-policy/",
+                termsText: "Terms of use",
+                termsLink: "https://publications.iarc.fr/Terms-Of-Use",
+                copyrightText: "All rights reserved",
+                copyrightLink: "https://iarc.fr/copyright-notice/",
+            },
+            footerMenu: [
+                
+                {
+                    title: "About ILCCO",
+                    
+                        path: "/about/",
+                    
+                    linkTarget: "_self",
+                    links: [
+                        
+                    ],
+                },
+                
+                {
+                    title: "Working groups",
+                    
+                        path: "/working-groups/",
+                    
+                    linkTarget: "_self",
+                    links: [
+                        
+                    ],
+                },
+                
+                {
+                    title: "Research projects",
+                    
+                        path: "/research-projects/",
+                    
+                    linkTarget: "_self",
+                    links: [
+                        
+                    ],
+                },
+                
+                {
+                    title: "Publications",
+                    
+                        path: "/publications/",
+                    
+                    linkTarget: "_self",
+                    links: [
+                        
+                    ],
+                },
+                
+                {
+                    title: "Links",
+                    
+                        path: "/links/",
+                    
+                    linkTarget: "_self",
+                    links: [
+                        
+                    ],
+                },
+                
+            ],
+            footerContact: {
+                title: "Contact",
+                address: "150 Cours Albert Thomas",
+                city: "69372 Lyon CEDEX 08",
+                country: "France",
+                email: "renardh@iarc.fr",
+                phone: "",
+            },
+            footerTexts: {
+                socialText: "Connect with us",
+                policyText: "Privacy policy",
+                policyLink: "https://www.iarc.who.int/privacy-policy/",
+                termsText: "Terms of use",
+                termsLink: "https://publications.iarc.fr/Terms-Of-Use",
+                copyrightText: "All rights reserved",
+                copyrightLink: "https://iarc.fr/copyright-notice/",
+            },
+            
+            social: {
+                
+                twitter: {
+                    link: "https://twitter.com/iarcwho",
+                    icon: "/img/twitter.svg?h=79dd53aa"
+                },
+                
+                linkedin: {
+                    link: "https://www.linkedin.com/company/international-agency-for-research-on-cancer/",
+                    icon: "/img/linkedin.svg?h=5172faa3"
+                },
+                
+                youtube: {
+                    link: "https://www.youtube.com/channel/UCw1sEvFsKqLLRmKQdaOSs9A",
+                    icon: "/img/youtube.svg?h=415ed3d9"
+                },
+                
+                rss: {
+                    link: "https://www.iarc.who.int/cards_page/iarcrssfeeds/",
+                    icon: "/img/rss.svg?h=92a3129f"
+                },
+                
+            },
+            
+        }
+    },
+});
+    </script>
+</body>
+
+</html>
