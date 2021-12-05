@@ -2,6 +2,10 @@
 
 We have uploaded an excel spreadsheet with our PRS and summary of results. [Which you can download here ](/GWAx_lung_cancer/LC_GWAx.xlsx)
 
+The code that was generated for this paper can be [found here ](https://github.com/IARC-genetics/GWAx_lung_cancer)
+
+
+
 
 ## Family history of lung cancer GWAx results
 
