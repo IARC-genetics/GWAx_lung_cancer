@@ -1,6 +1,6 @@
 # Additional data from Gabriel and Atkins
 
-We have uploaded an excel spreadsheet with our PRS and summary of results. [Which you can download here ](url)
+We have uploaded an excel spreadsheet with our PRS and summary of results. [Which you can download here ](/GWAx_lung_cancer/LC_GWAx.xlsx)
 
 
 ## Family history of lung cancer GWAx results
