@@ -10,7 +10,7 @@ The code that was generated for this paper can be [found here ](https://github.c
 
 [Z Z plot of family history GWAS vs TRICL lung cancer ](url)
 
-[Genetic correlation of family history GWAS across GSCAN smoking traits ](url)
+[Genetic correlation of family history GWAS across GSCAN smoking traits ](/GWAx_lung_cancer/fh/RG_smoke_final.png)
 
 [Dynamic Manhattan plot of GWAS on just family history ](url)
 
