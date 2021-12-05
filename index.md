@@ -63,4 +63,4 @@ The code that was generated for this paper can be [found here ](https://github.c
 
 ### Contact
 
-Email the following  atkinsj  at fellow (dot) iarc (dot) fr
+Email the following  atkinsj  at fellows (dot) iarc (dot) fr
