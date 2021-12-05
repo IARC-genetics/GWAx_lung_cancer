@@ -33,7 +33,7 @@ We have uploaded an excel spreadsheet with our PRS and summary of results. [Whic
 
 #### Genome-wide associated loci from Meta-analysis of family history GWAx and TRICL 
 
-[View the web table here ](/GWAx_lung_cancer/smPRS/)
+[View the web table here ](/GWAx_lung_cancer/gwPRS/)
 
 [Download the table as a TXT here ](/GWAx_lung_cancer/smPRS/)
 
