@@ -1,23 +1,35 @@
 ## Additional data from Gabriel and Atkins
 
-We have uploaded an excel spreadsheet with our PRS and summary of results. 
+We have uploaded an excel spreadsheet with our PRS and summary of results. [Which you can download here ](url)
 
-Along with plotly plots 
 
 
 ### Family history GWAX
 
 [Z Z plot of family history GWAS vs TRICL lung cancer ](url)
+
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](url)
+
 [Manhattan plot of GWAS on just family history ](url)
+
 [Summary statistics for just family history conducted on the UK Biobank ](url)
 
 
 ### PRS
 
+#### Genome-wide associated loci from Meta-analysis of family history GWAx and TRICL 
+
+[View the web table here ](/GWAx_lung_cancer/smPRS/)
+
+[Download the table as a TXT here ](/GWAx_lung_cancer/smPRS/)
+
+
+
 #### Smoking PRS (smPRS)
+
 [web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
 
+[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
