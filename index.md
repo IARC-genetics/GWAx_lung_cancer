@@ -1,21 +1,35 @@
-## Additional data from Gabriel and Atkins
+# Additional data from Gabriel and Atkins
 
 We have uploaded an excel spreadsheet with our PRS and summary of results. [Which you can download here ](url)
 
 
-
-### Family history GWAX
+## Family history of lung cancer GWAx results
 
 [Z Z plot of family history GWAS vs TRICL lung cancer ](url)
 
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](url)
 
-[Manhattan plot of GWAS on just family history ](url)
+[Dynamic Manhattan plot of GWAS on just family history ](url)
 
 [Summary statistics for just family history conducted on the UK Biobank ](url)
 
 
-### PRS
+
+## Meta-analysis of GWAx and Lung cancer GWAS (TRICL)
+
+[Dynamic Manhattan plot ](url)
+
+[Summary statistics ](url)
+
+
+## Colocalisation Analysis
+
+[Individual ZxZ plots between the Novel loci and eQTL tissue can be found here ](url)
+
+[Individual ZxZ plots between the all Genome-wide significant Loci and eQTL tissue can be found here ](url)
+
+
+## PRS
 
 #### Genome-wide associated loci from Meta-analysis of family history GWAx and TRICL 
 
@@ -23,13 +37,26 @@ We have uploaded an excel spreadsheet with our PRS and summary of results. [Whic
 
 [Download the table as a TXT here ](/GWAx_lung_cancer/smPRS/)
 
-
-
 #### Smoking PRS (smPRS)
 
 [web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
 
 [PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
+
+#### eQTL PRS (eQTLPRS)
+
+[web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
+
+[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
+
+#### The combined list (cmbPRS)
+
+[web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
+
+[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
+
+
+
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -56,11 +83,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IARC-genetics/GWAx_lung_cancer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
