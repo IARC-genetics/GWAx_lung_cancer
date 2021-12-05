@@ -6,7 +6,6 @@ The code that was generated for this paper can be [found here ](https://github.c
 
 
 
-
 ## Family history of lung cancer GWAx results
 
 [Z Z plot of family history GWAS vs TRICL lung cancer ](url)
