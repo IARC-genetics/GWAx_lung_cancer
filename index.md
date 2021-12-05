@@ -1,6 +1,11 @@
-## Welcome to GitHub Pages
+## Additional data from Gabriel and Atkins
 
-You can use the [editor on GitHub](https://github.com/IARC-genetics/GWAx_lung_cancer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+We have uploaded an excel spreadsheet with our PRS and summary of results. 
+
+Along with plotly plots 
+
+
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
