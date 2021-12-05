@@ -8,7 +8,7 @@ The code that was generated for this paper can be [found here ](https://github.c
 
 ## Family history of lung cancer GWAx results
 
-[Z Z plot of family history GWAS vs TRICL lung cancer ](url)
+[ZxZ plot of family history GWAS vs TRICL lung cancer ](/GWAx_lung_cancer/fh/zxz_fh_tricl.png)
 
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](/GWAx_lung_cancer/fh/RG_smoke_final.png)
 
