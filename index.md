@@ -4,6 +4,15 @@ We have uploaded an excel spreadsheet with our PRS and summary of results. [Whic
 
 The code that was generated for this paper can be [found here ](https://github.com/IARC-genetics/GWAx_lung_cancer)
 
+## Summary Statistics 
+
+For use of the summary statistics from our paper - users must agree that they will use these summary statistics to advance research in lung cancer and will not try to identify individuals that were part of this study. If you use these summary statistics in your work, please give us a cite if you wish but more importantly please tag me (twitter @josh_atkins311) in any preprints/papers as I would love to read everyone's work that uses these summary statistics. 
+
+If you agree to the above; 
+[Summary statistics of a family history of lung cancer (mother, father or sibling) - coming soon ](url)
+[Summary statistics of the meta-analysis performed on the l (mother, father or sibling) - coming soon ](url)
+
+
 
 
 ## Family history of lung cancer GWAx results
@@ -13,8 +22,6 @@ The code that was generated for this paper can be [found here ](https://github.c
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](/GWAx_lung_cancer/fh/RG_smoke_final.png)
 
 [Dynamic Manhattan plot of GWAS on just family history ](url)
-
-[Summary statistics for just family history conducted on the UK Biobank ](url)
 
 
 
