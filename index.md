@@ -21,22 +21,6 @@ If you agree to the above;
 
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](/GWAx_lung_cancer/fh/RG_smoke_final.png)
 
-[Dynamic Manhattan plot of GWAS on just family history ](url)
-
-
-
-## Meta-analysis of GWAx and Lung cancer GWAS (TRICL)
-
-[Dynamic Manhattan plot ](url)
-
-[Summary statistics ](url)
-
-
-## Colocalisation Analysis
-
-[Individual ZxZ plots between the Novel loci and eQTL tissue can be found here ](url)
-
-[Individual ZxZ plots between the all Genome-wide significant Loci and eQTL tissue can be found here ](url)
 
 
 ## PRS
@@ -51,23 +35,18 @@ If you agree to the above;
 
 [web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
 
-[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
-
 #### eQTL PRS (eQTLPRS)
 
 [web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
-
-[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
 
 #### The combined list (cmbPRS)
 
 [web table of variants and all information including GTEx variables ](/GWAx_lung_cancer/smPRS/)
 
-[PRS table as a TXT to download ](/GWAx_lung_cancer/smPRS/)
 
 
 
 
 ### Contact
 
-Email the following  atkinsj  at fellows (dot) iarc (dot) fr
+Email the following  atkinsj  at iarc (dot) who (dot) int  or contact me via twitter:  @josh_atkins311
