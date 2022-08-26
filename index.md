@@ -9,7 +9,7 @@ The code that was generated for this paper can be [found here ](https://github.c
 For use of the summary statistics from our paper - users must agree that they will use these summary statistics to advance research in lung cancer and will not try to identify individuals that were part of this study. If you use these summary statistics in your work, please give us a cite if you wish but more importantly please tag me (twitter @josh_atkins311) in any preprints/papers as I would love to read everyone's work that uses these summary statistics. 
 
 If you agree to the above; 
-[Summary statistics from our meta ]([url](https://bit.ly/3cr5Ppl))
+[Summary statistics from our meta ](https://bit.ly/3cr5Ppl)
 
 
 
