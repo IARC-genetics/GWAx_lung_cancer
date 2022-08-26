@@ -17,6 +17,8 @@ If you agree to the above;
 
 ## Family history of lung cancer GWAx results
 
+[Dynamic manhattan plot with functional information/smoking trait Zs etc, large html - download and open in chrome](https://bit.ly/3R93D4E) 
+
 [ZxZ plot of family history GWAS vs TRICL lung cancer ](/GWAx_lung_cancer/fh/zxz_fh_tricl.png)
 
 [Genetic correlation of family history GWAS across GSCAN smoking traits ](/GWAx_lung_cancer/fh/RG_smoke_final.png)
